@@ -7,14 +7,20 @@
   <body>
     <script type="text/javascript">
       function keisankikun() {
-        var element1=document getElementById('imt1')
-        var element2=document getElementById('imt2')
-        alert(element.value)33
+        var element1=document.getElementById('imt1')
+        var element2=document.getElementById('imt2')
+
+        var result = parseInt(element1.value) + parseInt(element2.value)
+
+
+        alert(result);
       }
     </script>
     <input id="imt1" name="" value="">
     <input id="imt2" name="" value="">
     <button onclick="keisankikun()" type="button" name="button">計算</button>
+計算結果:
+<p id="result"></p>
 
   </body>
 </html>
